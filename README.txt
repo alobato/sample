@@ -7,7 +7,7 @@ $ pg_ctl -D /usr/local/var/postgres start
 Postgres:
 $ createdb -Oroot -Eutf8 sample_development
 MySQL:
-$ DATABASE_DEVELOPMENT_URL=postgres://root@localhost:5432/sample_development npx sequelize-cli db:create
+$ npx sequelize-cli db:create
 
 
 2) Generate crud files
@@ -17,10 +17,6 @@ $ npx hygen model new --name user
 
 3) Migrate database
 $ DATABASE_DEVELOPMENT_URL=postgres://root@localhost:5432/sample_development npx sequelize-cli db:migrate
-
-
-4) Create seeders files and run
-$ DATABASE_DEVELOPMENT_URL=postgres://root@localhost:5432/sample_development npx sequelize-cli db:seed:all
 
 
 ------------------------------------------------------------------------------
