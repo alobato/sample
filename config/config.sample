@@ -1,0 +1,46 @@
+.env
+DATABASE_DEVELOPMENT_URL=postgres://root@localhost:5432/sample-development
+
+POSTGRES
+{
+  "development": {
+    "use_env_variable": "DATABASE_DEVELOPMENT_URL",
+    "dialect": "postgres"
+  },
+  "test": {
+    "use_env_variable": "DATABASE_TEST_URL",
+    "dialect": "postgres"
+  },
+  "production": {
+    "use_env_variable": "DATABASE_PRODUCTION_URL",
+    "dialect": "postgres"
+  }
+}
+
+MYSQL
+{
+  "development": {
+    "username": "root",
+    "password": null,
+    "database": "sample_development",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "operatorsAliases": false
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "sample_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "operatorsAliases": false
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "sample_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "operatorsAliases": false
+  }
+}
