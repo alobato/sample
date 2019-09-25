@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "nodemon app.js",
+    "debug": "nodemon --inspect app.js",
     "node": "node --experimental-repl-await",
     "test": "jest --detectOpenHandles"
   },
